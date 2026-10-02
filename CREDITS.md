@@ -1,5 +1,9 @@
 # Credits
 
+## EasyEffects
+
+Everything here runs on [EasyEffects](https://github.com/wwmm/easyeffects) by Wellington Wallace and contributors (GPL-3.0). It does all the audio processing; this repo only holds presets and a service for it. If you find the project useful, consider starring or supporting EasyEffects itself.
+
 Presets and impulse responses from other people, with the licence each was published under.
 Their licence texts are in [licenses/](licenses/). Everything else in this repo is GPL-3.0 (see LICENSE).
 

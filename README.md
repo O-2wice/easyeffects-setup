@@ -1,6 +1,8 @@
 # easyeffects-setup
 
-Presets and a small always-on setup for EasyEffects 8 (Flatpak) on Linux with PipeWire.
+Presets and a small always-on setup for [EasyEffects](https://github.com/wwmm/easyeffects) 8 (Flatpak) on Linux with PipeWire.
+
+All the audio work is done by EasyEffects, made by Wellington Wallace and its contributors. This repo only adds presets and a service around it.
 
 ## What's in it
 
