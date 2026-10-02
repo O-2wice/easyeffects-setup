@@ -1,0 +1,5 @@
+- [ ] Preset is in `presets/output/` and named `Group - Name.json` where a group fits
+- [ ] Any impulse response it needs is in `presets/irs/`
+- [ ] Loads in EasyEffects 8 and doesn't clip (a limiter at the end helps)
+- [ ] Not tuned to one specific device unless the name says which
+- [ ] Someone else's preset? Row added to CREDITS.md and its licence allows sharing

@@ -1,0 +1,39 @@
+name: Share a preset
+description: Send in an EasyEffects preset you like. No git needed.
+title: "Preset: "
+labels: ["preset"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing. To get the file: in EasyEffects open Presets > Local, click the export button next to the name box and pick a folder. Your preset is the `.json` file with its name.
+  - type: input
+    id: name
+    attributes:
+      label: Preset name
+      description: Start with a group if one fits, e.g. "Mood - ", "Laptop - ", "Headphones - ".
+      placeholder: "Mood - Sunday Morning"
+    validations:
+      required: true
+  - type: textarea
+    id: file
+    attributes:
+      label: Preset file
+      description: Drag the .json file in here, or paste its contents. If it uses an impulse response (.irs), zip it and attach that too.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: What it's good for
+      description: Kind of music or content, and what you listened on (laptop speakers, headphones, a Bluetooth speaker...).
+  - type: dropdown
+    id: licence
+    attributes:
+      label: Where it comes from
+      description: Presets in this repo are shared under GPL-3.0.
+      options:
+        - I made it and I'm fine with GPL-3.0
+        - It's someone else's (link and licence in the notes above)
+    validations:
+      required: true

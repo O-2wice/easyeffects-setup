@@ -29,6 +29,10 @@ For the two Bluetooth speaker extras:
 systemctl --user enable --now ee8-bt-mirror.service ee8-volume-follow.service
 ```
 
+## Share your favourite EQ
+
+Got a preset you love? [Share it here](https://github.com/O-2wice/easyeffects-setup/issues/new?template=share-a-preset.yml). Just drop the file in, no git needed. Pull requests are welcome too, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Licence
 
 GPL-3.0, see [LICENSE](LICENSE). Community presets keep their own licences, listed in [CREDITS.md](CREDITS.md) with the texts in [licenses/](licenses/).
