@@ -1,0 +1,13 @@
+[StreamInputs]
+processAllInputs=false
+useDefaultInputDevice=true
+
+[StreamOutputs]
+processAllOutputs=true
+useDefaultOutputDevice=true
+
+[Window]
+enableServiceMode=true
+outputAutoloadingFallbackPreset=Mood - Flat
+outputAutoloadingUsesFallback=true
+showTrayIcon=true

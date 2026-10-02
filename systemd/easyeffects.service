@@ -1,0 +1,17 @@
+[Unit]
+# Never stop restarting it, however often it crashes.
+StartLimitIntervalSec=0
+Description=EasyEffects 8 (Flatpak), always running (restarts if it exits)
+PartOf=graphical-session.target
+After=graphical-session.target pipewire.service wireplumber.service
+
+[Service]
+# Wait (max 20s) for a system tray host so the EasyEffects tray icon registers.
+ExecStartPre=/bin/sh -c 'for i in $(seq 1 20); do gdbus introspect --session --dest org.kde.StatusNotifierWatcher --object-path /StatusNotifierWatcher >/dev/null 2>&1 && exit 0; sleep 1; done; exit 0'
+ExecStart=/usr/bin/flatpak run com.github.wwmm.easyeffects --service-mode --hide-window
+ExecStop=/usr/bin/flatpak run --command=easyeffects com.github.wwmm.easyeffects -q
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target
